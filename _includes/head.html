@@ -28,8 +28,8 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu-url }}";
-  var s = document.getElementsByTagName("script")[0];
+  hm.src = "https://hm.baidu.com/hm.js?a717425d6fdb46814bf56a63376fd994";
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
@@ -37,12 +37,13 @@ var _hmt = _hmt || [];
 <!-- 谷歌分析 -->
 {% if site.google %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-ID }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172477936-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.google-ID }}');
+  gtag('config', 'UA-172477936-1');
 </script>
+
 {% endif %}
