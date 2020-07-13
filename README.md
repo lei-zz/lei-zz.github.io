@@ -2,7 +2,7 @@
 
 
 ### Preview
-(http://xseven.me/)
+(https://lei-zz.github.io/)
 
 ![1](/screenshot/1.png)
 
