@@ -28,7 +28,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   mail: 'mailto:zhenglei_0828@163.com'
   weixin: '/assets/img/sns/wechat.jpeg' # 你的微信二维码存放的地址
   #qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  #github: ''
+  github: 'https://github.com/lei-zz'
   #Codepen: ''
   #weibo: ''
   #instagram: ''
