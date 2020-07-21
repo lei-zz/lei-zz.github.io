@@ -17,9 +17,9 @@ author: true
 name: 'Lei.zz'
 NickName: 'your awesome nickname'
 webtitle: 'Blog'
-bio: 'your awesome bio'
+bio: 'Java开发'
 about: true
-aboutyou: 'your introduction'
+aboutyou: '一个技术爱好者，欢迎交流，一起进步'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
