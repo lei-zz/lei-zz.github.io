@@ -529,14 +529,14 @@ a{
     background: white;
 }
 .postpage-subtitle{
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   background-color: #fafbfc;
-  margin: 0 10% 20px 10%;
+  /*margin: 0 10% 20px 10%;*/
   font-size: 20px;
 }
 .markdown-body:hover{
