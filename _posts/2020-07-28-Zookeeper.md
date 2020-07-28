@@ -68,13 +68,13 @@ Watcher，重要特性。zookeeper允许再指定节点注册watcher，并在一
 
 #### ACL
 
-Zookeeper􏳔􏰉采用ACL􏴦Access Control Lists􏴧􏵣􏵤􏱆􏲴􏰪􏵥􏱁􏵦􏵠􏰌􏲢􏰜􏰝􏲧􏱭􏰳􏵧􏲾􏵥􏱁􏰞策略进行权限控制，以下五种权限：
+Zookeeper􏳔􏰉采用ACL􏴦Access ControlLists􏴧􏵣􏵤􏱆􏲴􏰪􏵥􏱁􏵦􏵠􏰌􏲢􏰜􏰝􏲧􏱭􏰳􏵧􏲾􏵥􏱁􏰞策略进行权限控制，以下五种权限：
 
-- CREATE􏰞􏵨􏴍􏵓􏳴􏱎􏰇􏵥􏱁􏰘：创建子节点的权限
-- READ􏰞􏵩􏵪􏳴􏱎􏴤􏴥􏳵􏵓􏳴􏱎􏱲􏵫􏰇􏵥􏱁􏰘 ：获取节点数据和子节点列表的权限
-- WRITE􏰞􏵬􏵭􏳴􏱎􏴤􏴥􏰇􏵥􏱁􏰘：更新节点数据权限
-- DELETE􏰞􏵮􏵯􏵓􏳴􏱎􏰇􏵥􏱁􏰘：删除子节点权限
-- ADMIN􏰞􏱧􏵰：设置节点􏳴􏱎ACL􏰇􏵥􏱁􏰘权限
+- CREATE􏰞􏵨􏴍􏵓􏳴􏱎􏰇􏵥􏱁􏰘:创建子节点的权限
+- READ􏰞􏵩􏵪􏳴􏱎􏴤􏴥􏳵􏵓􏳴􏱎􏱲􏵫􏰇􏵥􏱁􏰘:获取节点数据和子节点列表的权限
+- WRITE􏰞􏵬􏵭􏳴􏱎􏴤􏴥􏰇􏵥􏱁:更新节点数据权限
+- DELETE􏰞􏵮􏵯􏵓􏳴􏱎􏰇􏵥􏱁􏰘:删除子节点权限
+- ADMIN􏰞􏱧􏵰:设置节点􏳴􏱎ACL􏰇􏵥􏱁􏰘权限
 
 􏲢􏱱􏳜􏰆􏵛􏵱􏰇􏰍􏰌CREATE􏳵和Delete权限都是针对子节点的权限控制􏱁􏳍􏰍􏵲􏲌􏵓􏳴􏱎􏰇􏵥􏱁􏵦􏵠
 
@@ -112,7 +112,7 @@ Zookeeper􏳔􏰉采用ACL􏴦Access Control Lists􏴧􏵣􏵤􏱆􏲴􏰪􏵥�
 
 ### ZNode状态信息
 
-<img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728164501307.png" alt="image-20200728164501307" style="zoom:50%;" />
+<img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728164501307.png" alt="image-20200728164501307" style="zoom:50%;" />
 
 #### 节点数据内容
 
@@ -151,7 +151,7 @@ quota节点数据
 
 #### 分布式全局唯一ID分配机制
 
-<img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728171749706.png" alt="image-20200728171749706" style="zoom:50%;" />
+<img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728171749706.png" alt="image-20200728171749706" style="zoom:50%;" />
 
 基本步骤：
 
@@ -178,7 +178,7 @@ quota节点数据
 
    > 创建一个节点做为收集器跟节点，例如/logs/collector,每台机器启动时在收集器节点下创建自己的节点
 
-   <img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728172827712.png" alt="image-20200728172827712" style="zoom:50%;" />
+   <img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728172827712.png" alt="image-20200728172827712" style="zoom:50%;" />
 
 2. 任务分发
 
@@ -200,7 +200,7 @@ quota节点数据
 
    数据节点表示一个锁
 
-   <img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728173801986.png" alt="image-20200728173801986" style="zoom:50%;" />
+   <img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728173801986.png" alt="image-20200728173801986" style="zoom:50%;" />
 
 2. ##### 获取锁
 
@@ -213,7 +213,7 @@ quota节点数据
    - 锁是临时节点，所以客户端届起宕机，节点会被移除，就会释放锁
    - 执行正常业务逻辑后，主动删除节点。
 
-<img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728175740782.png" alt="image-20200728175740782" style="zoom:50%;" />
+<img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728175740782.png" alt="image-20200728175740782" style="zoom:50%;" />
 
 #### 共享锁
 
@@ -225,7 +225,7 @@ quota节点数据
 
    通过数据节点表示一个锁，临时顺序节点
 
-   <img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728175956494.png" alt="image-20200728175956494" style="zoom:50%;" />
+   <img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728175956494.png" alt="image-20200728175956494" style="zoom:50%;" />
 
 2. 获取锁
 
@@ -243,7 +243,7 @@ quota节点数据
 
    创建临时顺序节点
 
-   <img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728180423034.png" alt="image-20200728180423034" style="zoom:50%;" />
+   <img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728180423034.png" alt="image-20200728180423034" style="zoom:50%;" />
 
    > 执行顺序：
    >
@@ -252,7 +252,7 @@ quota节点数据
    > 3. 如果自己的序号不是最小，那么需要等待，同时比自己序号小的最后一个节点注册watcher监听
    > 4. 接收到watcher通知，重复第一步
    >
-   > <img src="../assets/img/post/2020-07-28-Zookeeper/image-20200728180439127.png" alt="image-20200728180439127" style="zoom:50%;" />
+   > <img src="/assets/img/post/2020-07-28-Zookeeper/image-20200728180439127.png" alt="image-20200728180439127" style="zoom:50%;" />
 
 2. #### Barrier：分布式屏障
 
